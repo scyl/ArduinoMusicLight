@@ -38,11 +38,11 @@ void setup() {
   history.addFirst(empty);
   history.addFirst(empty);
   
-  // Load the file
+  // Load the music file
   minim = new Minim(this);
   music = minim.loadFile("moy.mp3", 1024);
   
-  // loop the file
+  // Play the music in a loop
   music.loop();
   
   // create an FFT object for calculating logarithmically spaced averages
